@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     volumes:
      - ./app/sources:/usr/src/app
-    #command: sh -c "cd ${REACT_PROJECT_NAME} && yarn start"
+    command: sh -c "cd ${REACT_PROJECT_NAME} && yarn start"
     ports:
      - "3000:3000"
     tty: true
